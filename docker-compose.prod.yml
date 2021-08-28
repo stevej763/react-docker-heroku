@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+
+  react-docker-21-prod:
+    container_name: react-docker-21-prod
+    build:
+      context: .
+      dockerfile: Dockerfile.prod
+    ports:
+      - '80:80'
